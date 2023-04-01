@@ -9,8 +9,7 @@ terraform {
 
 provider "snowflake" {
   role  = "SYSADMIN"
-  region   = "eu-west-2.aws"
-
+  region   = "eu-west-3.aws"
 }
 
 resource "snowflake_database" "db" {
@@ -23,3 +22,4 @@ resource "snowflake_warehouse" "warehouse" {
 
   auto_suspend = 60
 }
+
